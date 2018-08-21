@@ -43,10 +43,10 @@ public class JobDetail {
     /**
      * 任务类型,该字段用于content组合用于不同类型任务的支持,如: java-method,script,jar 等
      */
-    private String type;
+    private String taskType;
 
     /**
-     * 任务内容,{@link this#type}字段不同,配置格式也不同,具体格式由{@link TaskRunnableFactory}进行处理
+     * 任务内容,{@link this#taskType}字段不同,配置格式也不同,具体格式由{@link TaskRunnableFactory}进行处理
      *
      * @see TaskRunnableFactory
      */
